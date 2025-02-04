@@ -35,14 +35,54 @@
   .section-add-card .add-to-card {
     grid-template-columns: repeat(2, 1fr);
   }
+  .all-clint-box{
+    flex-direction: column;
+  }
+  .clint-box-show{
+    width: 99%;
+  }
+  .clint-box-contant{
+    width: 90%;
+  }
+}
+@media (min-width: 800px) {
+  .all-clint-box .clint-box-show > :nth-child(2) {
+    transform: translatey(-18%);
+  }
 }
 @media (max-width: 768px) {
   .banner-contant-img .bg-contant .banner-text {
     font-size: 42px;
   }
   .section-add-card .add-to-card {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .effect-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .clint-box-show{
+    width: 99%;
+    flex-direction: column;
+  }
+  .row-box{
+    width: 100%;
+  }
+  .box-big{
+    flex-direction: column;
+  }
+  .big-headphone-img img{
+    width: 100%;
+  }
+  .big-img-contant{
+    padding: 50px 2px;
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
+  .section-add-card .add-to-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .effect-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
