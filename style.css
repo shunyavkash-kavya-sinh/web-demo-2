@@ -225,6 +225,7 @@ header:hover .logo-head {
 .btn-primary a {
   color: white;
   padding: 20px 10px;
+  transition: all 0.5s ease-in-out;
 }
 .btn-primary:hover a {
   color: black;
