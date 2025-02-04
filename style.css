@@ -360,7 +360,7 @@ header:hover .logo-head {
   padding: 12px;
 }
 
-.box-2 {
+.box-2,.box-1 {
   background-color: rgb(248, 248, 248);
   justify-content: center;
   max-width: 100%;
