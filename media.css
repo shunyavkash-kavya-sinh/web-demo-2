@@ -1,9 +1,15 @@
-@media (max-width: 992px) {
-  .logo-head ul li {
+@media (min-width: 991px) {
+  .toggal-menu {
     display: none;
+    width: 100%;
   }
-  .logo-head .toggal-menu {
-    visibility: visible;
+}
+@media (max-width: 992px) {
+ .menu{
+  display: none;
+ }
+  .toggal-menu {
+    display: block;
   }
   .banner-contant-img {
     flex-direction: column;
@@ -110,7 +116,7 @@
   .grid-box-all {
     display: inline-block;
   }
-  .grid-box{
-    margin: 10px;
+  .grid-box {
+    margin: 10px 0px;
   }
 }
