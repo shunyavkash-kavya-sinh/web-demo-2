@@ -71,6 +71,7 @@ body {
 
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .align-item-center {
@@ -361,7 +362,8 @@ header:hover .logo-head {
   padding: 12px;
 }
 
-.box-2,.box-1 {
+.box-2,
+.box-1 {
   background-color: rgb(248, 248, 248);
   justify-content: center;
   max-width: 100%;
@@ -512,3 +514,114 @@ header:hover .logo-head {
   font-size: 24px;
 }
 /* big-headphone end  */
+/* slider start */
+.sider-h2 {
+  padding: 30px 0px;
+  font-size: 42px;
+}
+.slider-sections {
+  padding: 100px 0px;
+  background-color: rgba(128, 0, 128, 0.63);
+}
+.slider-box {
+  background: white;
+  padding: 30px;
+  border-radius: 30px;
+  border: 5px solid rgb(255 255 255 / 20%);
+  background-clip: padding-box;
+  height: 100%;
+  margin: 2px 0px;
+}
+.slider-svg-icone {
+  color: rgba(128, 0, 128, 0.63);
+  border: 3px solid rgba(128, 0, 128, 0.63);
+  border-radius: 15px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-svg-icone svg {
+  width: 50px;
+  height: 50px;
+}
+.slider-h3 {
+  font-size: 26px;
+  color: purple;
+  padding: 10px 0px;
+}
+.slider-pera {
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  line-height: 1.62;
+  padding-bottom: 15px;
+}
+/* slider end */
+/* - gird box start */
+.grid-section {
+  position: relative;
+}
+.grid-box-all {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.grid-box-all {
+  position: absolute  ;
+  width: 100%;
+  left: 0;
+}
+.grid-box-1 {
+  grid-row: 1/5;
+}
+.grid-box-3 {
+  grid-row: 1/5;
+  grid-column-start: 3;
+}
+.grid-box {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 2px solid black;
+  margin: 1px;
+}
+.gird-img{
+  max-width:200px;
+  height: 200px;
+}
+.gird-img img{
+  width:100%;
+  height: 100%;
+}
+.grid-box {
+  position: relative;
+}
+.grid-img-contant {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color:rgba(0, 0, 0, 0.562);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.grid-img-contant svg {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 5px solid white;
+  border-radius: 50px;
+}
+.grid-box:hover .grid-img-contant {
+  opacity: 1;
+}
+
+/* - gird box end */

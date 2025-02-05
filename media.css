@@ -35,14 +35,22 @@
   .section-add-card .add-to-card {
     grid-template-columns: repeat(2, 1fr);
   }
-  .all-clint-box{
+  .all-clint-box {
     flex-direction: column;
   }
-  .clint-box-show{
+  .clint-box-show {
     width: 99%;
   }
-  .clint-box-contant{
+  .clint-box-contant {
     width: 90%;
+  }
+  .sliedr-five-box {
+    flex-direction: column;
+    padding: 20px 25px;
+  }
+  .slider-box {
+    width: 100%;
+    margin: 8px 0px;
   }
 }
 @media (min-width: 800px) {
@@ -60,22 +68,36 @@
   .effect-card {
     grid-template-columns: repeat(2, 1fr);
   }
-  .clint-box-show{
+  .clint-box-show {
     width: 99%;
     flex-direction: column;
   }
-  .row-box{
+  .row-box {
     width: 100%;
   }
-  .box-big{
+  .box-big {
     flex-direction: column;
   }
-  .big-headphone-img img{
+  .big-headphone-img img {
     width: 100%;
   }
-  .big-img-contant{
+  .big-img-contant {
     padding: 50px 2px;
     width: 100%;
+  }
+  .grid-box-all {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .grid-box-1 {
+    grid-row: 1/1;
+  }
+  .grid-box-3 {
+    grid-row: 1/1;
+    grid-column-start: 1;
+  }
+  .gird-img img {
+    padding: 20px;
   }
 }
 @media (max-width: 576px) {
@@ -84,5 +106,11 @@
   }
   .effect-card {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-box-all {
+    display: inline-block;
+  }
+  .grid-box{
+    margin: 10px;
   }
 }

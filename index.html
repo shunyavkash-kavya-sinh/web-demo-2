@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html and css</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+
 </head>
 
 <body>
     <!-- header start -->
-    <header>
+    <header style="overflow: hidden;">
         <nav>
             <div class="container">
                 <div class="logo-head d-flex align-item-center justify-content-between ">
@@ -511,7 +512,7 @@
                 <div class="box-big d-flex align-item-center justify-content-between">
                     <div class="col-6">
                         <div class="big-headphone-img">
-                            <img src="img/home-background-image-5_770x.png" alt="">
+                            <img src="img/home-background-image-5_770x.png" draggable="false" alt="">
                         </div>
                     </div>
                     <div class="col-6 big-img-contant">
@@ -529,7 +530,178 @@
             </div>
         </section>
         <!-- big-headphone end -->
+        <!-- slider strat  -->
+        <section class="slider-sections">
+            <div class="container">
+                <div class="value-slider d-flex justify-content-center">
+                    <h2 class="sider-h2">Head-Phone</h2>
+                </div>
+                <div class="sliedr-five-box d-flex  justify-content-center">
+                    <div class="col-6 slider-box">
+                        <div class="svg-contant d-flex justify-content-between">
+                            <div class="slider-svg-icone ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-bulb">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M4 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" />
+                                    <path d="M12 2a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z" />
+                                    <path d="M21 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" />
+                                    <path d="M4.893 4.893a1 1 0 0 1 1.32 -.083l.094 .083l.7 .7a1 1 0 0 1 -1.32 1.497l-.094 -.083l-.7 -.7a1 1 0 0 1 0 -1.414z" />
+                                    <path d="M17.693 4.893a1 1 0 0 1 1.497 1.32l-.083 .094l-.7 .7a1 1 0 0 1 -1.497 -1.32l.083 -.094l.7 -.7z" />
+                                    <path d="M14 18a1 1 0 0 1 1 1a3 3 0 0 1 -6 0a1 1 0 0 1 .883 -.993l.117 -.007h4z" />
+                                    <path d="M12 6a6 6 0 0 1 3.6 10.8a1 1 0 0 1 -.471 .192l-.129 .008h-6a1 1 0 0 1 -.6 -.2a6 6 0 0 1 3.6 -10.8z" />
+                                </svg>
+                            </div>
+                            <div class="svg-icone-contant col-10">
+                                <h3 class="slider-h3">Creativity</h3>
+                                <p class="slider-pera">CreativityWe believe that innovation and out-of-the-box thinking are essential in developing exceptional software solutions. Our team of talented developers, designers, and engineers is...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 slider-box">
+                        <div class="svg-contant d-flex justify-content-between">
+                            <div class="slider-svg-icone ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-star">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M9.718 17.359l-.718 -.359l-6 3v-13l6 -3l6 3l6 -3v7.5" />
+                                    <path d="M9 4v13" />
+                                    <path d="M15 7v4" />
+                                    <path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />
+                                </svg>
+                            </div>
+                            <div class="svg-icone-contant col-10">
+                                <h3 class="slider-h3">Creativity</h3>
+                                <p class="slider-pera">CreativityWe believe that innovation and out-of-the-box thinking are essential in developing exceptional software solutions. Our team of talented developers, designers, and engineers is...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 slider-box">
+                        <div class="svg-contant d-flex justify-content-between">
+                            <div class="slider-svg-icone ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-infinity">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M9.828 9.172a4 4 0 1 0 0 5.656a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+                                </svg>
+                            </div>
+                            <div class="svg-icone-contant col-10">
+                                <h3 class="slider-h3">Creativity</h3>
+                                <p class="slider-pera">CreativityWe believe that innovation and out-of-the-box thinking are essential in developing exceptional software solutions. Our team of talented developers, designers, and engineers is...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 slider-box">
+                        <div class="svg-contant d-flex justify-content-between">
+                            <div class="slider-svg-icone ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-book">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                                    <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                                    <path d="M3 6l0 13" />
+                                    <path d="M12 6l0 13" />
+                                    <path d="M21 6l0 13" />
+                                </svg>
+                            </div>
+                            <div class="svg-icone-contant col-10">
+                                <h3 class="slider-h3">Creativity</h3>
+                                <p class="slider-pera">CreativityWe believe that innovation and out-of-the-box thinking are essential in developing exceptional software solutions. Our team of talented developers, designers, and engineers is...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 slider-box">
+                        <div class="svg-contant d-flex justify-content-between">
+                            <div class="slider-svg-icone ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-wind">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 8h8.5a2.5 2.5 0 1 0 -2.34 -3.24" />
+                                    <path d="M3 12h15.5a2.5 2.5 0 1 1 -2.34 3.24" />
+                                    <path d="M4 16h5.5a2.5 2.5 0 1 1 -2.34 3.24" />
+                                </svg>
+                            </div>
+                            <div class="svg-icone-contant col-10">
+                                <h3 class="slider-h3">Creativity</h3>
+                                <p class="slider-pera">CreativityWe believe that innovation and out-of-the-box thinking are essential in developing exceptional software solutions. Our team of talented developers, designers, and engineers is...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slider end -->
+        <!-- gird box start -->
+        <section class="grid-section">
+            <div class="container">
+                <div class="grid-box-all">
+                    <div class="grid-box grid-box-1">
+                        <div class="gird-img">
+                            <img src="img/home-image-4.png" alt="">
+                        </div>
+                        <div class="grid-img-contant">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plus">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 5l0 14" />
+                                <path d="M5 12l14 0" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="grid-box">
+                        <div class="gird-img">
+                            <img src="img/head-g (1).png" alt="">
+                        </div>
+                        <div class="grid-img-contant">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plus">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 5l0 14" />
+                                <path d="M5 12l14 0" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="grid-box  grid-box-3">
+                        <div class="gird-img">
+                            <img src="img/home-background-image-5_770x.png" alt="">
+                        </div>
+                        <div class="grid-img-contant">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plus">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 5l0 14" />
+                                <path d="M5 12l14 0" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="grid-box">
+                        <div class="gird-img">
+                            <img src="img/head-g (2).png" alt="">
+                        </div>
+                        <div class="grid-img-contant">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plus">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 5l0 14" />
+                                <path d="M5 12l14 0" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="grid-box">
+                        <div class="gird-img">
+                            <img src="img/headphones-png-18.png" alt="">
+                        </div>
+                        <div class="grid-img-contant">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plus">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 5l0 14" />
+                                <path d="M5 12l14 0" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- gird box end -->
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
 </body>
+
 
 </html>
