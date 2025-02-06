@@ -5,13 +5,13 @@
   }
 }
 @media (max-width: 992px) {
- .menu{
-  display: none;
- }
+  .menu {
+    display: none;
+  }
   .toggal-menu {
     display: block;
   }
- 
+
   .banner-contant-img {
     flex-direction: column;
   }
@@ -58,6 +58,9 @@
   .slider-box {
     width: 100%;
     margin: 8px 0px;
+  }
+  .footer-box {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 800px) {
@@ -106,6 +109,9 @@
   .gird-img img {
     padding: 20px;
   }
+  .footer-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 576px) {
   .section-add-card .add-to-card {
@@ -119,5 +125,15 @@
   }
   .grid-box {
     margin: 10px 0px;
+  }
+  .footer-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .last-section {
+    padding: 100px 0px;
+    background-image: url("https://cdn.vectorstock.com/i/500p/52/53/condensation-water-drops-on-purple-background-vector-43765253.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
