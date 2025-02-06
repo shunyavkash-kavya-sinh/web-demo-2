@@ -144,9 +144,13 @@ header:hover .logo-head {
   background-color: rgba(245, 245, 245, 0.226);
 }
 
-
 .logo-head .toggal-menu a {
   color: white;
+}
+.icone-menu {
+  max-width: 100%;
+  width: 300px;
+  justify-content: end;
 }
 /* header end */
 /* banner start */
@@ -262,11 +266,6 @@ header:hover .logo-head {
   margin: 20px 0px;
   border-radius: 20px;
   padding: 12px;
-  overflow: hidden;
-}
-.card-imgs {
-  padding: 12px;
-  overflow: hidden;
 }
 .add-card-contant {
   border-radius: 0px 0px 18px 18px;
@@ -301,23 +300,32 @@ header:hover .logo-head {
   color: black;
 }
 .card-imgs {
+   width: 100%;
+  height: 100%;
+  max-height: 300px;
   position: relative;
+  aspect-ratio: 1/1;
 }
 .card-imgs img {
-  max-width: 100%;
-  height: 350px;
+  width: 100%;
+  height:100%;
+  object-fit: contain;
+
 }
 .crad-img-2 {
   position: absolute;
   width: 100%;
   height: 100%;
+  max-height: 300px;
   top: 0;
   left: 0;
+  aspect-ratio: 1/1;
+
 }
 .crad-img-2 img {
-  max-width: 100%;
-  height: 360px;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+   object-fit: contain;
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
@@ -617,5 +625,77 @@ header:hover .logo-head {
 .grid-box:hover .grid-img-contant {
   opacity: 1;
 }
-
 /* - gird box end */
+/* slick slider start */
+  .slick-section{
+    padding: 100px 0px;
+  }
+  .img-box-slick{
+    margin: 10px;
+    position: relative;
+  }
+  .slick-contant{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-shadow: 1px 5px 2px purple;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0.678);
+    color: white;
+    transition:all 0.5s ease-in-out;
+  }
+  .img-box-slick:hover .slick-contant{
+    height: 100%;
+  }
+  .slick-img{
+    aspect-ratio: 1/1;
+  }
+  .slick-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slick-section .slick-box  .slick-prev{
+    position: absolute;
+    bottom: -50px;
+    left: 120px;
+    background-color: rgba(128, 0, 128, 0.699);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: transparent;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+  }
+  .slick-section .slick-box  .slick-next{
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    background-color: rgba(128, 0, 128, 0.699);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: transparent;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+  }
+  .slick-section .slick-box  .slick-arrow:hover{
+    background: white;
+    border: 1px solid black;
+    color: black;
+  }
+  .slick-box-all{
+    position: relative;
+  }
+/* slick slider end */
