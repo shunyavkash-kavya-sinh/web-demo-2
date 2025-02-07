@@ -29,7 +29,7 @@
                     <div class="header-img">
                         <img src="img/logo.png" alt="logo-head" width="50px" height="50px">
                     </div>
-                    <ul class="menu d-flex justify-content-between ">
+                    <ul class="menu toggle-item d-flex justify-content-between ">
                         <li><a href="#">home</a></li>
                         <li class="main-hov-box">
                             <a href="#">
@@ -1053,12 +1053,27 @@
             ]
 
         });
+        // $(document).ready(function () {
+        //     $(".toggal-menu").click(function () {
+        //         $(".menu").slideToggle("slow");
+        //     });
+        // });
+    </script>
+    <script>
         $(document).ready(function () {
+            $(window).resize(function () {
+                if ($(window).width() > 992) {
+                    $(".toggle-item").slideDown("slow");
+                } else {
+                    $(".toggle-item").hide('');;
+                }
+            })
             $(".toggal-menu").click(function () {
                 $(".menu").slideToggle("slow");
             });
         });
     </script>
+
 
 </body>
 
