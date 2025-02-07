@@ -2,14 +2,19 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html and css</title>
+    <title>Head-phone</title>
+    <!-- fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- slick link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <!--css style link -->
     <link rel="stylesheet" href="style.css">
+    <!-- media link -->
     <link rel="stylesheet" href="media.css">
 
 </head>
@@ -17,7 +22,7 @@
 <body>
     <!-- header start -->
 
-    <header style="overflow: hidden;">
+    <header>
         <nav>
             <div class="container">
                 <div class="logo-head d-flex align-item-center justify-content-between">
@@ -26,11 +31,20 @@
                     </div>
                     <ul class="menu d-flex justify-content-between ">
                         <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
+                        <li class="main-hov-box">
+                            <a href="#">
+                                about
+                            </a>
+                            <ul class="in-hover-box">
+                                <li><a href="javascript:void()">About-us</a></li>
+                                <li><a href="javascript:void()">Offers</a></li>
+                                <li><a href="javascript:void()">Help-us</a></li>
+                                <li><a href="javascript:void()">Contact</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">contact</a></li>
                         <li><a href="#">help</a></li>
                         <li><a href="#">shop</a></li>
-
                     </ul>
                     <ul class="icone-menu d-flex ">
                         <li>
@@ -68,7 +82,7 @@
                 </div>
             </div>
         </nav>
-    
+
     </header>
 
     <!-- header end -->
@@ -713,7 +727,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- gird box end -->
         <!-- slick-slider start -->
 
@@ -1039,7 +1053,13 @@
             ]
 
         });
+        $(document).ready(function () {
+            $(".toggal-menu").click(function () {
+                $(".menu").slideToggle("slow");
+            });
+        });
     </script>
 
 </body>
+
 </html>

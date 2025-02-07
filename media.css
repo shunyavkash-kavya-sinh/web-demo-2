@@ -4,12 +4,33 @@
     width: 100%;
   }
 }
+
 @media (max-width: 992px) {
+  header{
+    position: relative;
+  }
   .menu {
-    display: none;
+    display: block;
+      position: absolute;
+      background-color: purple;
+      width: 100%;
+      justify-content: start;
+      height:100vh;
+      padding: 50px 12px;
+      align-items: center;
+      left: 0;
+      top: 100%;
+  }
+  .menu li {
+   font-size: 20px;
+   font-weight: 300;
+   padding: 30px;
   }
   .toggal-menu {
     display: block;
+  }
+  .toggal-menu:focus-visible{
+    background-color: aqua;
   }
 
   .banner-contant-img {
@@ -63,11 +84,13 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (min-width: 800px) {
   .all-clint-box .clint-box-show > :nth-child(2) {
     transform: translatey(-18%);
   }
 }
+
 @media (max-width: 768px) {
   .banner-contant-img .bg-contant .banner-text {
     font-size: 42px;
@@ -113,6 +136,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 576px) {
   .section-add-card .add-to-card {
     grid-template-columns: repeat(1, 1fr);

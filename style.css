@@ -133,11 +133,17 @@ header:hover .logo-head {
   padding: 10px;
 }
 
-.logo-head ul li a {
+.logo-head .menu li a {
   padding: 10px 20px;
   text-transform: uppercase;
   color: white;
   display: flex;
+}
+.logo-head .icone-menu li a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  display: flex;
+  color: white;
 }
 
 .logo-head ul li a:hover {
@@ -147,9 +153,43 @@ header:hover .logo-head {
 .logo-head .toggal-menu a {
   color: white;
 }
+
 .icone-menu {
   max-width: 100%;
   width: 200px;
+}
+
+.main-hov-box {
+  position: relative;
+}
+
+.in-hover-box {
+  position: absolute;
+  left: 0;
+  background-color: white;
+  padding: 20px;
+  color: black;
+  width: 160px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.menu .main-hov-box .in-hover-box li a {
+  color: black;
+  font-weight: 400;
+}
+
+.menu .main-hov-box .in-hover-box li a:hover {
+  color: white;
+  background-color: #0000004f;
+}
+
+.main-hov-box:hover .in-hover-box {
+  opacity: 1;
+  visibility: visible;
 }
 /* header end */
 /* banner start */
